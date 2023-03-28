@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <!-- <body>
+    <div>
+      <h1>TODO List</h1>
+      <form>
+        <input type="text" placeholder="важное дело" />
+        <button type="submit">Add task</button>
+      </form>
+      <ul></ul>
+    </div> -->
+
+    <label for="productInput">Продукт:</label>
+<input type="text" id="productInput" /><br />
+
+<label for="categoryInput">Категория:</label>
+<input type="text" id="categoryInput" /><br />
+
+<label for="priceInput">Стоимость:</label>
+<input type="text" id="priceInput" /><br />
+
+<label for="deliveryInput">Доставка:</label>
+<input type="text" id="deliveryInput" /><br />
+
+<button type="button" onclick="saveParam()">Сохранить данные</button>
+
+<div class="hystmodal" id="myModal" aria-hidden="true" >
+  <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true" >
+          <button data-hystclose class="hystmodal__close">Close</button>  
+          <h1>Заголовок модального окна</h1>
+          <p>Текст модального окна ...</p>
+          <img src="img/photo.jpg" alt="Изображение" width="400" />
+          <p>Ещё текст модального окна ...</p>
+      </div>
+  </div>
+</div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
